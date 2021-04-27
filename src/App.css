@@ -1,3 +1,11 @@
+/* * {
+  border: 1px solid white;
+} */
+
+body {
+  background-color: black;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +43,82 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  height: 300px;
+  width: 350px;
+  border: 6px solid aqua;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#temp {
+grid-column: 2 / 3;
+grid-row: 2 / 3;
+}
+#hotTemp {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  color: red;
+}
+#coldTemp {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  color: blue;
+}
+#description {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+#maxTemp {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+#minTemp {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+form {
+  margin-top: 30px;
+}
+
+span {
+  margin: 50px;
+  text-decoration: underline;
+}
+
+.city {
+  grid-column: 1 / span 3;
+  color: white;
+  font-size: 4em;
+}
+
+h1 {
+  padding: 3em;
+  color: white;
+  font-size: 3em;
+}
+
+h2 {
+
+  text-align: center;
+  font-size: 4em;
+}
+
+h3 {
+  color: white;
+}
+.result {
+  color: aqua;
 }
